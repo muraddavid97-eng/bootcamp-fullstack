@@ -65,6 +65,7 @@ function randomPizza() {
 
   var randomCheese1 =
     cheeseOptions[Math.floor(Math.random() * cheeseOptions.length)];
+
   var randomCheese2 =
     cheeseOptions[Math.floor(Math.random() * cheeseOptions.length)];
 
