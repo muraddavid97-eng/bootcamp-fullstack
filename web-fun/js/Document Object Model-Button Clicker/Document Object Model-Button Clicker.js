@@ -9,7 +9,11 @@ function changeLogin(element) {
 let button = document.querySelector(".login-btn");
 
 button.addEventListener("click", function () {
-  button.style.backgroundColor = "red";
+  if (button.style.backgroundColor === "red") {
+    button.style.backgroundColor = "blue";
+  } else {
+    button.style.backgroundColor = "red";
+  }
 });
 
 function removeButton(element) {
