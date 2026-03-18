@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weather forecast</title>
+        <link rel="stylesheet" href="/js/DojoWeather/DojoWeather.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container nav-content">
+                <h1>DojoWeather</h1>
+
+                <ul class="cities">
+                    <li><a href="#"
+                            onclick="showAlert('Burbank')">Burbank</a></li>
+                    <li><a href="#"
+                            onclick="showAlert('Chicago')">Chicago</a></li>
+                    <li><a href="#"
+                            onclick="showAlert('Dallas')">Dallas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="top-row">
+                <h2>San Jose</h2>
+
+                <div class="temp-setting">
+                    <label for="temp">show temperature in</label>
+                    <select id="temp" onchange="convertTemp(this.value)">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr />
+
+            <section class="weather-cards">
+                <div class="card">
+                    <h3>Today</h3>
+                    <img
+                        src="https://files.cdn.thinkific.com/file_uploads/906206/attachments/3af/bd5/67a/some_rain.png"
+                        alt="some rain" />
+                    <p>some rain</p>
+                    <div class="temps">
+                        <span class="high temp">24</span>
+                        <span class="low temp">18</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Tomorrow</h3>
+                    <img
+                        src="https://files.cdn.thinkific.com/file_uploads/906206/attachments/f02/2e8/6ba/some_sun.png"
+                        alt="some sun" />
+                    <p>some sun</p>
+                    <div class="temps">
+                        <span class="high temp">27</span>
+                        <span class="low temp">19</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Friday</h3>
+                    <img
+                        src="https://files.cdn.thinkific.com/file_uploads/906206/attachments/c08/360/2bb/some_clouds.png"
+                        alt="some clouds" />
+                    <p>some clouds</p>
+                    <div class="temps">
+                        <span class="high temp">21</span>
+                        <span class="low temp">16</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Saturday</h3>
+                    <img
+                        src="https://files.cdn.thinkific.com/file_uploads/906206/attachments/f02/2e8/6ba/some_sun.png"
+                        alt="some sun" />
+                    <p>some sun</p>
+                    <div class="temps">
+                        <span class="high temp">26</span>
+                        <span class="low temp">21</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="cookie-box" id="cookieBox">
+            <div class="cookie-left">
+                <img
+                    src="https://files.cdn.thinkific.com/file_uploads/906206/attachments/6ef/c41/f01/cookie.png"
+                    alt="cookie" />
+                <div>
+                    <h4>Stop! Cookie time</h4>
+                    <p>
+                        We use cookies (sadly not the edible ones) to
+                        personalize content and ads,
+                        to provide social media features and to analyse our
+                        traffic.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+            <button onclick="acceptCookie()">I Accept</button>
+        </div>
+
+        <script src="/js/DojoWeather/DojoWeather.js"></script>
+    </body>
+</html>
